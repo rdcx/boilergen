@@ -1,0 +1,20 @@
+package main
+
+import (
+	"lightban/api/db"
+	"lightban/api/handler"
+	"lightban/api/router"
+)
+
+func main() {
+	{{ if .HasDB }}
+	db := db.NewDB(dsn)
+	h := handler.NewHandler(db)
+	{{ else }}
+	h := handler.NewHandler()
+	{{ end }}
+
+	r := router.SetUp(h)
+
+	r.Run(":8080")
+}

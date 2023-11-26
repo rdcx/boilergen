@@ -1,0 +1,104 @@
+[
+    {
+        "key_name": "be-lang",
+        "display_name": "Backend Language",
+        "allow_multiple": false,
+        "values": [
+            {
+                "key_name": "Go",
+                "display_name": "Go",
+                "values": [
+                    {
+                        "key_name": "framework",
+                        "display_name": "Framework",
+                        "values": [
+                            {
+                                "key_name": "gin",
+                                "display_name": "Gin",
+                                "values": [
+                                    {
+                                        "key_name": "options",
+                                        "allow_multiple": true,
+                                        "values": [
+                                            {
+                                                "key_name": "jwt_auth",
+                                                "display_name": "JWT Auth"
+                                            },
+                                            {
+                                                "key_name": "gorm",
+                                                "display_name": "GORM"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "key_name": "echo",
+                                "display_name": "Echo"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key_name": "fe-lang",
+        "display_name": "Frontend Language",
+        "values": [
+            {
+                "key_name": "js",
+                "display_name": "JavaScript",
+                "values": [
+                    {
+                        "key_name": "framework",
+                        "display_name": "Framework",
+                        "values": [
+                            {
+                                "key_name": "vue3",
+                                "display_name": "Vue",
+                                "values": [
+                                    {
+                                        "key_name": "options",
+                                        "display_name": "Options",
+                                        "values": [
+                                            {
+                                                "key_name": "vuex",
+                                                "display_name": "Vuex"
+                                            },
+                                            {
+                                                "key_name": "vue_router",
+                                                "display_name": "Vue Router"
+                                            },
+                                            {
+                                                "key_name": "axios",
+                                                "display_name": "Axios",
+                                                "values": [
+                                                    {
+                                                        "key_name": "options",
+                                                        "display_name": "Options",
+                                                        "values": [
+                                                            {
+                                                                "key_name": "base_url",
+                                                                "display_name": "Base URL",
+                                                                "type": "string"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "key_name": "vue",
+                                "display_name": "Vue"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
